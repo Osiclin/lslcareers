@@ -13,21 +13,16 @@ export default function MovieCard() {
             </div>
             <div style={{width: "100%"}}>
                 <p style={{wordWrap: "break-word"}}></p>
-                <div 
+                <button 
                     style={{
                         border: "1px solid black", 
                         width: "max-content", 
                         padding: ".5rem 1rem", 
                         cursor: "pointer", 
-                        color: view.text, 
-                        backgroundColor: view.background
                     }}
-                    onMouseEnter={() => setView({text: '#ffffff', background: "#000000"})}
-                    onMouseLeave={() => setView({text: '#000000', background: "#ffffff"})}
-
                 >
                     View
-                </div>
+                </button>
             </div>
         </div>
     )

@@ -23,6 +23,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  background-color: var(--color-bg-black);
+  color: var(--color-text-white);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-text-white: var(--color-black);
