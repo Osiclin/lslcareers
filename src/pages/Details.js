@@ -1,4 +1,4 @@
-export default function Single() {
+export default function Details() {
     return(
         <div>
             
