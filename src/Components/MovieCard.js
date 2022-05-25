@@ -1,11 +1,6 @@
-import { useState } from "react"
+import { Link } from "react-router-dom"
 
-export default function MovieCard() {
-    const [view, setView] = useState({
-        text: "black",
-        background: "#ffffff"
-    })
-    
+export default function MovieCard() {    
     return(
         <div style={{marginBottom: '2rem', width: "100%"}}>
             <div style={{width: "100%"}}>
@@ -13,16 +8,18 @@ export default function MovieCard() {
             </div>
             <div style={{width: "100%"}}>
                 <p style={{wordWrap: "break-word"}}></p>
-                <button 
-                    style={{
-                        border: "1px solid black", 
-                        width: "max-content", 
-                        padding: ".5rem 1rem", 
-                        cursor: "pointer", 
-                    }}
-                >
-                    View
-                </button>
+                <Link to='/id'>
+                    <button 
+                        style={{
+                            border: "1px solid black", 
+                            width: "max-content", 
+                            padding: ".5rem 1rem", 
+                            cursor: "pointer", 
+                        }}
+                    >
+                        View
+                    </button>
+                </Link>
             </div>
         </div>
     )
