@@ -22,6 +22,7 @@ export default function DetailsCard() {
         })
     
         const data = await res.json()
+        
         setMovie(data.result)
     }
 
