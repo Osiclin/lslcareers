@@ -1,6 +1,10 @@
+import { useContext } from "react"
+import MovieContext from "../../context/MovieContext"
 import styles from "./Search.module.css"
 
 export default function Search() {
+    const { movieList } = useContext(MovieContext)
+
     return(
         <div style={{maxWidth: "1024px", margin: "0 auto 6rem", display: "flex", justifyContent: "flex-end"}}>
             <form style={{display: "flex", height: "40px", maxWidth: "600px", width: "600px"}}>
