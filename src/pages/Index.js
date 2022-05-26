@@ -27,7 +27,13 @@ export default function Home() {
 
     return(
         <div>
-            <MovieContext.Provider value={{movieList, setMovieList}}>
+            <MovieContext.Provider 
+                value={{
+                    movieList, 
+                    setMovieList,
+                    search,
+                    setSearch
+                }}>
                 <Search/>
                 <MovieCardContainer/>
             </MovieContext.Provider>

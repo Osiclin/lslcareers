@@ -1,0 +1,35 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+.container>div:nth-child(2){
+    max-width: 650px;
+    padding: 0 2rem;
+}
+.image{
+    margin-bottom: 1rem;
+    min-width: 400px;
+}
+img{
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .container>div:nth-child(2){
+        /* flex: .9; */
+        max-width: 800px;
+        padding: 0;
+    }
+    .image{
+        /* flex: .1; */
+        margin-right: 0rem;
+        width: 100%;
+        min-width: unset;
+    }
+}

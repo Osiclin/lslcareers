@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { getAMovie } from "../services"
-import Spinner from "./Spinner/Spinner"
+import { getAMovie } from "../../services"
+import Spinner from "../Spinner/Spinner"
+import styles from "./DetailsCard.module.css"
 
 export default function DetailsCard() {
     const params = useParams()
@@ -27,12 +28,18 @@ export default function DetailsCard() {
     return(
         <div>
             {
-                !movie ? <div style={{width: '100%', height: "60vh", display: "flex", alignItems: "center", justifyContent: "center"}}><Spinner/></div> : 
-                <div style={{maxWidth: "1024px", margin: "0 auto", display: "flex"}}>
-                    <div style={{maxWidth: "330px"}}>
-                        <img src={movie?.image} width="330px" height="auto" alt="" />
+                !movie ? <div style={{width: '100%', height: "60vh", display: "flex", alignItems: "center", justifyContent: "center"}}><Spinner/></div> :
+                <div className={styles.container}>
+                    <div className={styles.image}>
+                        <img 
+                            src={movie?.image} 
+                            width="330px" 
+                            height="auto" 
+                            alt={movie?.title} 
+                        />
                     </div>
-                    <div style={{marginLeft: "2rem", maxWidth: "600px"}}>
+
+                    <div>
                         <div style={{display: "flex", alignItems: "baseline"}}>
                             <h2 style={{width: "170px", fontSize: "1.2rem", marginBottom: 0}}>Title:</h2>
                             <p style={{wordWrap: "break-word", fontSize: "1.2rem", marginBottom: 0}}>{movie?.titleOriginal}</p>

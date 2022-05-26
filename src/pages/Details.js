@@ -1,4 +1,4 @@
-import DetailsCard from "../Components/DetailsCard";
+import DetailsCard from "../Components/DetailsCard/DetailsCard";
 
 export default function Details() {
     return(
