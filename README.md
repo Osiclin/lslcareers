@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## NOTE 
 
+Normally i won't expose this keys but for the sake of this task and ease of use by the team
 Create a .env file in the root of the project and copy, paste these values to enable fetching from the API:
 
 REACT_APP_RAPID_API_KEY=56fe1c539bmsh6fb4610bd30e103p1a7aa5jsnfad25271bdd0
