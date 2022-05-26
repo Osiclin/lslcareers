@@ -33,7 +33,8 @@ export default function Home() {
                     setMovieList,
                     search,
                     setSearch
-                }}>
+                }}
+            >
                 <Search/>
                 <MovieCardContainer/>
             </MovieContext.Provider>
